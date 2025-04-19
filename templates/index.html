@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonido Shorty</title>
+    
+    <!-- Frameworks y Fuentes -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navbar Premium -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: var(--primary-color);">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/static/images/icon.png" alt="Sonido Shorty" class="img-fluid">
+                Sonido Shorty
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#informacion">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#paquetes">Paquetes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contratoModal">Contrato</a>
+                    </li>
+                    <!-- <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-premium" href="#contacto">
+                            <i class="fas fa-calendar-alt me-2"></i> Reservar
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Premium -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title animate__animated animate__fadeInDown">El audio, la música y el sabor</h1>
+                <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">Un sonido que hará que tus festejos sean ¡Otro rollo! </p>
+                <div class="d-flex justify-content-center gap-3 animate__animated animate__fadeInUp animate__delay-2s">
+                    <a href="#paquetes" class="btn btn-primary-premium me-3">
+                        <i class="fas fa-star me-2"></i> Nuestros Paquetes
+                    </a>
+                    <a href="#contacto" class="btn btn-outline-premium">
+                        <i class="fas fa-phone-alt me-2"></i> Contáctanos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-primary-light mb-4 mx-auto">
+                                <i class="fas fa-music fa-2x text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Sonido Profesional</h3>
+                            <p class="text-muted">Brindamos nuestro equipo de sonido, con la mejor calidad de audio, para que tu sentido auditivo se sienta acojido</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-primary-light mb-4 mx-auto">
+                                <i class="fas fa-lightbulb fa-2x text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Iluminación</h3>
+                            <p class="text-muted">Iluminación simple pero profesional que ambienta tu evento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-primary-light mb-4 mx-auto">
+                                <i class="fas fa-microphone-alt fa-2x text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Animación</h3>
+                            <p class="text-muted">Versatilidad en todos los eventos, interacción con el publico sin distinciones, dandoles a tus invitados una experiencia a otro nivel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="informacion" class="section" style="background: linear-gradient(rgba(142, 0, 185, 0.85), rgba(142, 0, 185, 0.85)), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover; background-attachment: fixed; padding: 5rem">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <h2 class="text-white mb-4">Sobre nuestro sonido</h2>
+                    <p class="text-white mb-4">Nuestro objetivo es crear experiencias únicas a través de sonido de calidad, iluminación profesional y animación excepcional.</p>
+                    <p class="text-white mb-4">Cada evento es único para nosotros, por eso ofrecemos soluciones personalizadas adaptadas a tus necesidades específicas, garantizando la satisfacción total de nuestros clientes.</p>
+                    <div class="d-flex">
+                        <div class="pe-4 border-end border-white">
+                            <h3 class="text-white">2 años</h3>
+                            <p class="text-white-50 mb-0">De experiencia</p>
+                        </div>
+                        <div class="px-4 border-end border-white">
+                            <h3 class="text-white">100%</h3>
+                            <p class="text-white-50 mb-0">Satisfacción</p>
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-white">Sabor</h3>
+                            <p class="text-white-50 mb-0">Auditivo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="bg-white p-4 rounded shadow">
+                        <h3 class="mb-4">¿Por qué elegirnos?</h3>
+                        <div class="d-flex mb-4">
+                            <div class="icon-box bg-primary-light me-4">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="h5 mb-2">Equipo Profesional</h4>
+                                <p class="text-muted mb-0">Equipo de audio profesional sin molestias a tu sentido auditivo.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="icon-box bg-primary-light me-4">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="h5 mb-2">Servicio Personalizado</h4>
+                                <p class="text-muted mb-0">Nos adaptamos a cada evento según tus necesidades específicas.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="icon-box bg-primary-light me-4">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="h5 mb-2">Garantía de Calidad</h4>
+                                <p class="text-muted mb-0">Comprometidos con la excelencia en cada detalle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paquetes Premium -->
+    <section id="paquetes" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Nuestros Paquetes</h2>
+            <p class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">Ofrecemos soluciones adaptadas a todo tipo de eventos y presupuestos</p>
+            
+            <div class="row">
+                <!-- Paquete Básico -->
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 class="package-name">Básico</h3>
+                            <p>Ideal para eventos pequeños</p>
+                        </div>
+                        <div class="package-body">
+                            <div class="package-price">$1,500 <span>/ evento</span></div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check-circle"></i> 5 horas de servicio</li>
+                                <li><i class="fas fa-check-circle"></i> 1 subwoofer y 1 altavoz</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Paquete Estándar (Destacado) -->
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="package-card" style="transform: scale(1.05);">
+                        <div class="package-header">
+                            <h3 class="package-name">Estándar</h3>
+                            <p>Perfecto para la mayoría de eventos</p>
+                        </div>
+                        <div class="package-body">
+                            <div class="package-price">$2,500 <span>/ evento</span></div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check-circle"></i> 5 horas de servicio</li>
+                                <li><i class="fas fa-check-circle"></i> 2 subwoofers y 2 altavoces</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Paquete Premium -->
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 class="package-name">Premium</h3>
+                            <p>Experiencia de lujo para eventos exclusivos</p>
+                        </div>
+                        <div class="package-body">
+                            <div class="package-price">$3,500 <span>/ evento</span></div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check-circle"></i> 5 horas de servicio</li>
+                                <li><i class="fas fa-check-circle"></i> 4 subwoofers y 6 altavoces</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Videos -->
+    <section id="galeria" class="video-section">
+        <div class="container text-center">
+            <h2 class="text-white mb-4" data-aos="fade-up">Nuestros Eventos Destacados</h2>
+            <div id="eventCarousel" class="carousel slide" data-aos="fade-up">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="video-container">
+                            <video class="img-fluid w-100" controls>
+                                <source src="/static/videos/Video_1.mp4" type="video/mp4">
+                                Tu navegador no soporta videos.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-container">
+                            <video class="img-fluid w-100" controls>
+                                <source src="/static/videos/Video_2.mp4" type="video/mp4">
+                                Tu navegador no soporta videos.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-container">
+                            <video class="img-fluid w-100" controls>
+                                <source src="/static/videos/Video_3.mp4" type="video/mp4">
+                                Tu navegador no soporta videos.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-container">
+                            <video class="img-fluid w-100" controls>
+                                <source src="/static/videos/Video_4.mp4" type="video/mp4">
+                                Tu navegador no soporta videos.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-container">
+                            <video class="img-fluid w-100" controls>
+                                <source src="/static/video/Video_5.mp4" type="video/mp4">
+                                Tu navegador no soporta videos.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Premium -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a href="#inicio" class="footer-logo d-inline-block mb-3">Sonido Shorty</a>
+                    <p class="footer-about">Comprometidos con darte el mejor servicio en audio y animación, llevando tus sentidos a otro nivel.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/adam.michel.zarate.hernandez/"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h3>Enlaces</h3>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="#paquetes">Paquetes</a></li>
+                            <li><a href="#eventos">Eventos</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h3>Servicios</h3>
+                        <ul>
+                            <li><a>Sonido profesional</a></li>
+                            <li><a>Iluminación</a></li>
+                            <li><a>Animación</a></li>
+                            <li><a>Versatilidad en eventos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt me-2"></i> Izúcar de Matamoros, Puebla, México</li>
+                            <li><i class="fas fa-phone-alt me-2"></i> +52 243 109 94 45</li>
+                            <li><i class="fas fa-envelope me-2"></i> adam.hrzeta@gmail.com</li>
+                            <li><i class="fas fa-clock me-2"></i> Lunes - Domingo: 10:00 am - 10:00 pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2023 Sonido Shorty. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para Ver Contrato -->
+    <div class="modal fade" id="contratoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contrato de Servicios</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <iframe id="pdfViewer" src="" style="width:100%; height:70vh; border:none;"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

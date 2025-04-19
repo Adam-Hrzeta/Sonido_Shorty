@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonido Shorty - Producción Musical Profesional y Entretenimiento Premium</title>
+    
+    <!-- Frameworks Premium -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preconnect para optimización -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <style>
+        :root {
+            --primary-color: #8e00b9;
+            --primary-dark: #6a00a0;
+            --primary-light: #b74fd8;
+            --secondary-color: #ff6b00;
+            --dark-color: #1a1a2e;
+            --light-color: #f8f9fa;
+            --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            --gradient-accent: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+            background-color: var(--light-color);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        /* Navbar Premium */
+        .navbar {
+            padding: 20px 0;
+            transition: all 0.4s ease;
+        }
+        
+        .navbar.scrolled {
+            padding: 10px 0;
+            background-color: rgba(142, 0, 185, 0.95) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            padding: 8px 15px !important;
+            margin: 0 5px;
+            position: relative;
+        }
+        
+        .nav-link:before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:before {
+            width: 100%;
+        }
+        
+        .navbar-toggler {
+            border: none;
+            padding: 0.5rem;
+        }
+        
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        
+        /* Hero Section Premium */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+            padding: 180px 0 120px;
+            background: var(--gradient-primary);
+            color: white;
+            text-align: center;
+        }
+        
+        .hero-section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            opacity: 0.15;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        /* Botones Premium */
+        .btn-premium {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 32px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+            overflow: hidden;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary-premium {
+            background: white;
+            color: var(--primary-color);
+        }
+        
+        .btn-primary-premium:hover {
+            color: white;
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-primary-premium:active {
+            transform: translateY(1px);
+        }
+        
+        .btn-outline-premium {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-outline-premium:hover {
+            background: white;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        /* Secciones */
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+        
+        .section-title.center:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* Tarjetas de Paquetes Premium */
+        .package-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            background: white;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .package-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-accent);
+            z-index: 2;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .package-header {
+            padding: 30px 20px;
+            text-align: center;
+            background: white;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .package-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 5px;
+        }
+        
+        .package-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 20px 0;
+        }
+        
+        .package-price span {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        
+        .package-features {
+            list-style: none;
+            padding: 0 30px 30px;
+            margin: 0;
+        }
+        
+        .package-features li {
+            padding: 10px 0;
+            border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        
+        .package-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .package-features li i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        /* Carrusel Premium */
+        .carousel-premium {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        
+        .carousel-caption-premium {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            padding: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 30px;
+            width: 80%;
+        }
+        
+        /* Video Section */
+        .video-section {
+            background: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            position: relative;
+            padding: 150px 0;
+        }
+        
+        .video-section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(142, 0, 185, 0.8);
+        }
+        
+        .video-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .video-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 2;
+        }
+        
+        .video-play-btn:hover {
+            background: var(--secondary-color);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        
+        /* Testimonios */
+        .testimonial-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin: 15px;
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 60px;
+            color: rgba(142, 0, 185, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        
+        .author-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .author-role {
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+        
+        /* Footer Premium */
+        .footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 80px 0 30px;
+            position: relative;
+        }
+        
+        .footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: var(--gradient-accent);
+        }
+        
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .footer-about {
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+        
+        .footer-links h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-links h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--primary-color);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        /* Efectos especiales */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            
+            .section {
+                padding: 70px 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.3rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .package-card {
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-section {
+                padding: 120px 0 80px;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 50px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Premium -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: var(--primary-color);">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/static/images/icon.png" alt="Sonido Shorty" class="img-fluid">
+                Sonido Shorty
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#paquetes">Paquetes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#eventos">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-premium" href="#contacto">
+                            <i class="fas fa-calendar-alt me-2"></i> Reservar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Premium -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title animate__animated animate__fadeInDown">El audio, la música y el sabor</h1>
+                <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">Un sonido que hará que tus festejos sean ¡Otro rollo! </p>
+                <div class="d-flex justify-content-center gap-3 animate__animated animate__fadeInUp animate__delay-2s">
+                    <a href="#paquetes" class="btn btn-primary-premium me-3">
+                        <i class="fas fa-star me-2"></i> Nuestros Paquetes
+                    </a>
+                    <a href="#contacto" class="btn btn-outline-premium">
+                        <i class="fas fa-phone-alt me-2"></i> Contáctanos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Premium -->
+    <section id="servicios" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-primary-light mb-4 mx-auto">
+                                <i class="fas fa-music fa-2x text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Sonido Profesional</h3>
+                            <p class="text-muted">Equipos de última generación para una calidad de sonido excepcional en cualquier tipo de evento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-primary-light mb-4 mx-auto">
+                                <i class="fas fa-lightbulb fa-2x text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Iluminación</h3>
+                            <p class="text-muted">Sistemas de iluminación profesional que crean ambientes únicos y espectaculares para tu evento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-primary-light mb-4 mx-auto">
+                                <i class="fas fa-microphone-alt fa-2x text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Animación</h3>
+                            <p class="text-muted">Animadores profesionales que garantizan diversión y entretenimiento para todos tus invitados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="section" style="background: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover; background-attachment: fixed;">
+        <div class="overlay" style="background: rgba(142, 0, 185, 0.85);"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <h2 class="text-white mb-4">Sobre Sonido Shorty</h2>
+                    <p class="text-white-50 mb-4">Somos una empresa especializada en producción musical y entretenimiento con más de 10 años de experiencia en el mercado. Nuestro objetivo es crear experiencias únicas a través de sonido de calidad, iluminación profesional y animación excepcional.</p>
+                    <p class="text-white-50 mb-4">Cada evento es único para nosotros, por eso ofrecemos soluciones personalizadas adaptadas a tus necesidades específicas, garantizando la satisfacción total de nuestros clientes.</p>
+                    <div class="d-flex">
+                        <div class="pe-4 border-end border-white">
+                            <h3 class="text-white">+500</h3>
+                            <p class="text-white-50 mb-0">Eventos</p>
+                        </div>
+                        <div class="px-4 border-end border-white">
+                            <h3 class="text-white">100%</h3>
+                            <p class="text-white-50 mb-0">Satisfacción</p>
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-white">24/7</h3>
+                            <p class="text-white-50 mb-0">Soporte</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="bg-white p-4 rounded shadow">
+                        <h3 class="mb-4">¿Por qué elegirnos?</h3>
+                        <div class="d-flex mb-4">
+                            <div class="icon-box bg-primary-light me-4">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="h5 mb-2">Equipo Profesional</h4>
+                                <p class="text-muted mb-0">Técnicos y animadores con amplia experiencia en el sector.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="icon-box bg-primary-light me-4">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="h5 mb-2">Tecnología de Punta</h4>
+                                <p class="text-muted mb-0">Utilizamos solo equipos de marcas líderes en el mercado.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="icon-box bg-primary-light me-4">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="h5 mb-2">Servicio Personalizado</h4>
+                                <p class="text-muted mb-0">Diseñamos cada evento según tus necesidades específicas.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="icon-box bg-primary-light me-4">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="h5 mb-2">Garantía de Calidad</h4>
+                                <p class="text-muted mb-0">Comprometidos con la excelencia en cada detalle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paquetes Premium -->
+    <section id="paquetes" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Nuestros Paquetes</h2>
+            <p class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">Ofrecemos soluciones adaptadas a todo tipo de eventos y presupuestos</p>
+            
+            <div class="row">
+                <!-- Paquete Básico -->
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 class="package-name">Básico</h3>
+                            <p>Ideal para eventos pequeños</p>
+                        </div>
+                        <div class="package-body">
+                            <div class="package-price"> $1,500  <span>/ evento</span></div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check-circle"></i> 5 horas de servicio</li>
+                                <li><i class="fas fa-check-circle"></i> 1 subwoofer y 1 altavoz</li>
+                            </ul>
+                            <button class="btn btn-primary-premium w-100 mt-3">
+                                <i class="fas fa-shopping-cart me-2"></i> Contratar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Paquete Estándar (Destacado) -->
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="package-card" style="transform: scale(1.05);">
+                        <div class="package-header">
+                            <h3 class="package-name">Estándar</h3>
+                            <p>Perfecto para la mayoría de eventos</p>
+                        </div>
+                        <div class="package-body">
+                            <div class="package-price">$2,500 <span>/ evento</span></div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check-circle"></i> 5 horas de servicio</li>
+                                <li><i class="fas fa-check-circle"></i> 2 subwoofers y 2 altavoces</li>
+                            </ul>
+                            <button class="btn btn-primary-premium w-100 mt-3">
+                                <i class="fas fa-shopping-cart me-2"></i> Contratar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Paquete Premium -->
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3 class="package-name">Premium</h3>
+                            <p>Experiencia de lujo para eventos exclusivos</p>
+                        </div>
+                        <div class="package-body">
+                            <div class="package-price">$3,500 <span>/ evento</span></div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check-circle"></i> 5 horas de servicio</li>
+                                <li><i class="fas fa-check-circle"></i> 4 subwoofers y 6 altavoces</li>
+                            </ul>
+                            <button class="btn btn-primary-premium w-100 mt-3">
+                                <i class="fas fa-shopping-cart me-2"></i> Contratar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <p>¿Necesitas un paquete personalizado? <a href="#contacto" class="text-primary">Contáctanos</a> para crear una solución a tu medida.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Eventos -->
+    <section id="eventos" class="section">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Nuestros Eventos</h2>
+            <p class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">Algunos de los momentos especiales que hemos creado</p>
+            
+            <div class="row g-3">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid w-100" alt="Evento 1">
+                        <div class="gallery-overlay">
+                            <h5>Concierto en Vivo</h5>
+                            <p>Festival Musical 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid w-100" alt="Evento 2">
+                        <div class="gallery-overlay">
+                            <h5>Boda de Ensueño</h5>
+                            <p>Salón Las Gardenias</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid w-100" alt="Evento 3">
+                        <div class="gallery-overlay">
+                            <h5>Fiesta Corporativa</h5>
+                            <p>Empresa Tech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid w-100" alt="Evento 4">
+                        <div class="gallery-overlay">
+                            <h5>Fiesta de 15 Años</h5>
+                            <p>Celebración Especial</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid w-100" alt="Evento 5">
+                        <div class="gallery-overlay">
+                            <h5>Evento Deportivo</h5>
+                            <p>Gran Final del Torneo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#" class="btn btn-primary-premium">
+                    <i class="fas fa-images me-2"></i> Ver más eventos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios 
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Lo que dicen nuestros clientes</h2>
+            <p class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">Experiencias reales de quienes han confiado en nosotros</p>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card h-100">
+                        <div class="testimonial-text">
+                            "Contraté a Sonido Shorty para mi boda y fue la mejor decisión. El sonido era impecable, la iluminación creó un ambiente mágico y todos mis invitados quedaron encantados. ¡Superaron todas mis expectativas!"
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente 1">
+                            <div>
+                                <div class="author-name">María González</div>
+                                <div class="author-role">Novia - Boda en Puebla</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card h-100">
+                        <div class="testimonial-text">
+                            "Como organizador de eventos, he trabajado con muchas empresas de sonido, pero Sonido Shorty destaca por su profesionalismo, calidad de equipos y atención al detalle. Son mi primera opción para eventos importantes."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Cliente 2">
+                            <div>
+                                <div class="author-name">Carlos Mendoza</div>
+                                <div class="author-role">Organizador de Eventos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="testimonial-card h-100">
+                        <div class="testimonial-text">
+                            "El equipo de Sonido Shorty hizo que nuestra fiesta de 15 años fuera inolvidable. La música, la iluminación y la animación fueron perfectas. Todos los jóvenes (y adultos) bailaron toda la noche. ¡Gracias por todo!"
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente 3">
+                            <div>
+                                <div class="author-name">Laura Sánchez</div>
+                                <div class="author-role">Madre de la Quinceañera</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- Video Promocional -->
+    <section class="video-section">
+        <div class="container text-center">
+            <h2 class="text-white mb-4" data-aos="fade-up">Nuestro Trabajo en Acción</h2>
+            <p class="text-white-50 mb-5 mx-auto" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="100">Mira este video para experimentar la calidad y energía que llevamos a cada evento</p>
+            
+            <div class="video-container" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid w-100" alt="Video thumbnail">
+                <div class="video-play-btn">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto 
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="section-title text-center" data-aos="fade-up">Contáctanos</h2>
+            <p class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">Estamos listos para hacer tu evento inolvidable</p>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="contact-info">
+                        <div class="d-flex mb-4">
+                            <div class="icon-box bg-primary-light me-4">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="h5 mb-2">Ubicación</h4>
+                                <p class="text-muted mb-0">Izúcar de Matamoros, Puebla, México</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="icon-box bg-primary-light me-4">
+                                <i class="fas fa-phone-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="h5 mb-2">Teléfono</h4>
+                                <p class="text-muted mb-0">+52 243 109 94 45</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="icon-box bg-primary-light me-4">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="h5 mb-2">Email</h4>
+                                <p class="text-muted mb-0">adam.hrzeta@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="icon-box bg-primary-light me-4">
+                                <i class="fas fa-clock text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="h5 mb-2">Horario</h4>
+                                <p class="text-muted mb-0">Lunes a Domingo: 10:00 am - 10:00 pm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-5">
+                            <h4 class="h5 mb-3">Síguenos</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/adam.michel.zarate.hernandez/"><i class="fab fa-facebook-f'"></i></a>
+                                <a href="https://www.facebook.com/adam.michel.zarate.hernandez/"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-form bg-white p-4 rounded shadow">
+                        <h3 class="mb-4">Envíanos un mensaje</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="event-type" class="form-label">Tipo de evento</label>
+                                <select class="form-select" id="event-type">
+                                    <option selected>Selecciona una opción</option>
+                                    <option>Boda</option>
+                                    <option>Fiesta de 15 años</option>
+                                    <option>Evento corporativo</option>
+                                    <option>Concierto</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary-premium w-100">
+                                <i class="fas fa-paper-plane me-2"></i> Enviar mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    
+    <!-- Footer Premium -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a href="#" class="footer-logo d-inline-block mb-3">Sonido Shorty</a>
+                    <p class="footer-about">Comprometidos con darte el mejor servicio en audio y animación, llevando tus sentidos a otro nivel.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h3>Enlaces</h3>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="#paquetes">Paquetes</a></li>
+                            <li><a href="#eventos">Eventos</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-links">
+                        <h3>Servicios</h3>
+                        <ul>
+                            <li><a href="#">Sonido profesional</a></li>
+                            <li><a href="#">Iluminación</a></li>
+                            <li><a href="#">Animación</a></li>
+                            <li><a href="#">Versatilidad en eventos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt me-2"></i> Izúcar de Matamoros, Puebla, México</li>
+                            <li><i class="fas fa-phone-alt me-2"></i> +52 243 109 94 45</li>
+                            <li><i class="fas fa-envelope me-2"></i> adam.hrzeta@gmail.com</li>
+                            <li><i class="fas fa-clock me-2"></i> Lunes - Domingo: 10:00 am - 10:00 pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2023 Sonido Shorty. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts Premium -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    
+    <script>
+        // Inicializar AOS (Animate On Scroll)
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTopButton.style.opacity = '1';
+                backToTopButton.style.visibility = 'visible';
+            } else {
+                backToTopButton.style.opacity = '0';
+                backToTopButton.style.visibility = 'hidden';
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Video play button
+        const videoPlayBtn = document.querySelector('.video-play-btn');
+        if (videoPlayBtn) {
+            videoPlayBtn.addEventListener('click', function() {
+                const videoContainer = this.parentElement;
+                const iframe = document.createElement('iframe');
+                iframe.setAttribute('src', 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1');
+                iframe.setAttribute('frameborder', '0');
+                iframe.setAttribute('allowfullscreen', '');
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                
+                videoContainer.innerHTML = '';
+                videoContainer.appendChild(iframe);
+            });
+        }
+        
+        // Form submission
+        const contactForm = document.querySelector('.contact-form form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Aquí iría el código para enviar el formulario
+                alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
